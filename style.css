@@ -1,0 +1,88 @@
+:root {
+/*Primary*/
+
+--green: hsl(75, 94%, 57%);
+
+/*Neutral*/
+
+--white: hsl(0, 0%, 100%);
+--grey: hsl(0, 0%, 20%);
+--darkGrey: hsl(0, 0%, 12%);
+--offBlack: hsl(0, 0%, 8%);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  }
+
+body {
+    background-color: var(--offBlack);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Inter', sans-serif;
+}
+
+main {
+    width: 300px;
+    background-color: var(--darkGrey);
+    border-radius: 10px;
+    padding: 25px;
+    text-align: center;
+}
+
+img {
+    border-radius: 50%;
+}
+
+h1 {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.7em;
+    margin-bottom: 0px;
+}
+
+h2 {
+    color: var(--green);
+    font-size: .9em;
+}
+
+p {
+    color: var(--white);
+    font-weight: 300;
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.buttons a {
+    text-decoration: none;
+    color: var(--white);
+    background-color: var(--grey);
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+}
+
+.buttons a:hover {
+    background-color: var(--green);
+    color: var(--darkGrey);
+}
+
+.attribution {
+    position: fixed;
+    bottom: 0;
+    padding: 10px;
+    color: var(--white);
+}
